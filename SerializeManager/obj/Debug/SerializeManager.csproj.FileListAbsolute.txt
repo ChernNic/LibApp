@@ -1,0 +1,9 @@
+C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\SerializeManager\bin\Debug\SerializeManager.dll
+C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\SerializeManager\bin\Debug\SerializeManager.pdb
+C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\SerializeManager\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\SerializeManager\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\SerializeManager\obj\Debug\SerializeManager.csproj.AssemblyReference.cache
+C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\SerializeManager\obj\Debug\SerializeManager.csproj.CoreCompileInputs.cache
+C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\SerializeManager\obj\Debug\SerializeManager.csproj.CopyComplete
+C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\SerializeManager\obj\Debug\SerializeManager.dll
+C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\SerializeManager\obj\Debug\SerializeManager.pdb

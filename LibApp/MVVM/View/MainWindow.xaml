@@ -1,0 +1,62 @@
+﻿<Window x:Class="LibApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibApp" xmlns:viewmodel="clr-namespace:LibApp.MVVM.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:MainVM}"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="520" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+
+        <ListView ItemsSource="{Binding Models}"  SelectedItem="{Binding Model, Mode=TwoWay}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Source="{Binding Image}" Width="100"/>
+                        <TextBlock FontSize="16" Text="{Binding Name}" Grid.Row="1"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="1">
+                <Button Padding="20" Content="&lt;" Command="{Binding PreviosModelCommand}"/>
+                <Button Padding="20" Content="Вывести Json модель" Command="{Binding ShowModelCommand}"/>
+                <Button Padding="20" Content=">" Command="{Binding NextModelCommand}"/>
+            </StackPanel>
+
+            <Button Grid.Row="1" Width="100" Content="Открыть папку" HorizontalAlignment="Right" Command="{Binding OpenFolderCommand}"/>
+
+
+            <ListView ItemsSource="{Binding SelectedModels}" HorizontalAlignment="Center">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Image Source="{Binding Image}"/>
+                            <TextBlock FontSize="16" Text="{Binding Name}" Grid.Row="1"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </Grid>
+</Window>

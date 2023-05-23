@@ -1,0 +1,6 @@
+C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\ImageConverter\bin\Debug\ImageConverter.dll
+C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\ImageConverter\bin\Debug\ImageConverter.pdb
+C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\ImageConverter\obj\Debug\ImageConverter.csproj.AssemblyReference.cache
+C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\ImageConverter\obj\Debug\ImageConverter.csproj.CoreCompileInputs.cache
+C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\ImageConverter\obj\Debug\ImageConverter.dll
+C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\ImageConverter\obj\Debug\ImageConverter.pdb
