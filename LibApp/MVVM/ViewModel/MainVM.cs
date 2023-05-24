@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 using LibApp.MVVM.Model;
 using LibApp.ViewModel.Helpers;
@@ -20,7 +22,7 @@ namespace LibApp.MVVM.ViewModel
         public BindableCommand ShowModelCommand { get; set; }
         public BindableCommand NextModelCommand { get; set; }
         public BindableCommand PreviosModelCommand { get; set; }
-
+        public BindableCommand ChangeLanguageCommand { get; set; }
         public BindableCommand OpenFolderCommand { get; set; }  
 
         #endregion
@@ -58,6 +60,7 @@ namespace LibApp.MVVM.ViewModel
             ShowModelCommand = new BindableCommand(_ => ShowModelAsJson());
             NextModelCommand = new BindableCommand(_ => NextModel());
             PreviosModelCommand = new BindableCommand(_ => PreviosModel());
+            ChangeLanguageCommand = new BindableCommand(_ => ChangeLanguage());
         }
 
         private void ShowModelAsJson()
@@ -101,6 +104,22 @@ namespace LibApp.MVVM.ViewModel
                     Models.Add(new ImageModel { Name = Path.GetFileName(fileName), Image = image });
                 }
             }
+        }
+
+        public void ChangeLanguage()
+        {
+            CultureInfo currentCulture = App.Language;
+            CultureInfo newCulture;
+            if (currentCulture.Name == "en-US")
+            {
+                newCulture = new CultureInfo("ru-RU");
+            }
+            else
+            {
+                newCulture = new CultureInfo("en-US");
+            }
+
+            App.Language = newCulture;
         }
     }
 }

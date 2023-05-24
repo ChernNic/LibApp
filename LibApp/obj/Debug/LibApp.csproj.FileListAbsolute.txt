@@ -21,3 +21,6 @@ C:\Users\Николай\OneDrive\Рабочий стол\Практикума\Li
 C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\LibApp\obj\Debug\LibApp.csproj.CopyComplete
 C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\LibApp\obj\Debug\LibApp.exe
 C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\LibApp\obj\Debug\LibApp.pdb
+C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\LibApp\obj\Debug\Resources\Dictionaries\lang.ru-ru.baml
+C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\LibApp\obj\Debug\Resources\Dictionaries\lang.en-us.baml
+C:\Users\Николай\OneDrive\Рабочий стол\Практикума\LibApp\LibApp\obj\Debug\App.baml
